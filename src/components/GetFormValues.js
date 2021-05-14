@@ -13,7 +13,7 @@ export default function GetFormValues() {
     return (
         <div>
             <form onSubmit={getFormData}>
-                <input type="text" placeholder="Enter Name" onChange={(e)=> setName(e.target.value)}/> <br /><br />
+                <input type="text" placeholder="Enter Name" onChange={(e)=> setName(e.target.value)}/> <br /><br />    {/* can use value={name} */}
                 <select onChange={(e) => setInterest(e.target.value)}>
                     <option>Select Optoins</option>
                     <option>DC</option>
