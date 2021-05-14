@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import UseStatedemo from './components/UseStatedemo'
 import Students from './components/Propsdemo'
+import GetInputValue from './components/GetInputValue'
 
 function App() {
 const [data, setData] = useState(0);
@@ -20,6 +21,8 @@ const [data, setData] = useState(0);
 
       <h1>UseState demo</h1>
       <UseStatedemo />
+      <h1>Get Input box Value</h1>
+      <GetInputValue />
     </>
   );
 }
