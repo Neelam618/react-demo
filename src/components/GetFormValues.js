@@ -22,6 +22,7 @@ export default function GetFormValues() {
                 <br /><br />
                 <input type="checkbox" onChange={(e) => setTnc(e.target.checked)}/><span>Accept Terms and conditions</span><br /><br />
                 <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
             </form>
         </div>
     )
