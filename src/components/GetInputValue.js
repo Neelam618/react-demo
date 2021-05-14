@@ -10,8 +10,9 @@ export default function GetInputValue() {
     }
     return (
         <div>
-             { print? <h2>{data}</h2> : null }
-             <input type="text" onChange={getData}/><button onClick={() => setPrint(true)}>Print data</button>
+            <h1>Get Input box Value</h1>
+            { print? <h2>{data}</h2> : null }
+            <input type="text" onChange={getData}/><button onClick={() => setPrint(true)}>Print data</button>
         </div>
     )
 }

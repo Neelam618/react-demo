@@ -12,6 +12,7 @@ export default function GetFormValues() {
     }
     return (
         <div>
+            <h1>Get Form Values</h1>
             <form onSubmit={getFormData}>
                 <input type="text" placeholder="Enter Name" onChange={(e)=> setName(e.target.value)}/> <br /><br />    {/* can use value={name} */}
                 <select onChange={(e) => setInterest(e.target.value)}>
