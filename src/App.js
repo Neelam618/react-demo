@@ -2,6 +2,7 @@ import {useState} from 'react'
 import UseStatedemo from './components/UseStatedemo'
 import Students from './components/Propsdemo'
 import GetInputValue from './components/GetInputValue'
+import HideShowBtn from './components/HideShowBtn';
 
 function App() {
 const [data, setData] = useState(0);
@@ -23,6 +24,8 @@ const [data, setData] = useState(0);
       <UseStatedemo />
       <h1>Get Input box Value</h1>
       <GetInputValue />
+      <h1>Hide/Show Content</h1>
+      <HideShowBtn />
     </>
   );
 }
