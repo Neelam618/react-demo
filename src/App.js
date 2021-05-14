@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import Students from './components/Students'
 
 function App() {
 const [data, setData] = useState(0);
@@ -10,6 +11,10 @@ const [data, setData] = useState(0);
     <>
       <h1>{data}</h1>
       <button onClick={updateData}>Click Me</button>
+
+      <h2>Props in React</h2>
+      <Students name={"preeti"} email={"xyz"} other={{address: 'Delhi', mobile: '000'}} />
+      <Students name={"priya"} email={"abc"} other={{address: 'Mumbai', mobile: '111'}} />
     </>
   );
 }
