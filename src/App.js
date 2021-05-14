@@ -1,10 +1,10 @@
 import {useState} from 'react'
 
 function App() {
-const [data, setData] = useState("hi");
+const [data, setData] = useState(0);
 
   function updateData(){
-    setData("hello");
+    setData(data+1);
   } 
   return (
     <>
