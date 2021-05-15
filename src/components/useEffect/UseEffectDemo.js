@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react'
 export default function UseEffectDemo() {
     const [count, setCount] = useState(0)
     useEffect(() => {
-        console.log("work1")
+        console.log("useEffect called for demo")
     })
     return (
         <div>

@@ -6,6 +6,7 @@ import HideShowBtn from './components/useState/HideShowBtn';
 import GetFormValues from './components/useState/GetFormValues'
 import PassFunctionAsProp from './components/useState/PassFunctionAsProp'
 import UseEffectDemo from './components/useEffect/UseEffectDemo'
+import UseEffectWithstates from './components/useEffect/UseEffectWithstates'
 
 function App() {
   function getData() {
@@ -26,6 +27,7 @@ function App() {
       <GetFormValues />
       <PassFunctionAsProp data={getData}/>
       <UseEffectDemo />
+      <UseEffectWithstates />
     </div>
   );
 }
