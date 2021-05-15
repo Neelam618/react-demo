@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import style from './style.module.css'
 import UseStatedemo from './components/useState/UseStatedemo'
 import NumberIncrement from './components/useState/NumberIncrement'
 import Students from './components//useState/Propsdemo'
@@ -18,7 +19,7 @@ function App() {
   }
 
   return (
-    <div style={{margin: '10em', marginTop: 0}}>
+    <div className={style.container}>
 
       <h1>Props in React</h1>
       <Students name={"preeti"} email={"xyz"} other={{address: 'Delhi', mobile: '000'}} />
