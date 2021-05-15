@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 
-export default function UseEffectWithstates() {
+export default function UseEffectOnstates() {
     const [count, setCount] = useState(10)
     const [data, setData] = useState(100)
     useEffect(() => {
@@ -13,7 +13,7 @@ export default function UseEffectWithstates() {
 
     return (
         <div>
-            <h1>UseEffect on different states</h1>
+            <h1>UseEffect called on different states</h1>
             <h2>Count is {count}</h2>
             <h2>Data is {data}</h2>
             <button onClick={() => {setCount(count+1)}}>Update count</button>
