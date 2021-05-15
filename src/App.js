@@ -20,7 +20,9 @@ function App() {
   }
 
   function parentData(dataFromChild) {
-    alert(dataFromChild);
+    // alert(dataFromChild);
+    alert(dataFromChild.name)
+    console.log(dataFromChild)
   }
 
   return (

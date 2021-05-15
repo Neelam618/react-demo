@@ -1,7 +1,8 @@
 import React from 'react'
 
 export default function Child(props) {
-    const dataFromChild = "dataFromChildString"
+    // const dataFromChild = "dataFromChildString"
+    const dataFromChild = {name: "neelam", mob: 999}
     return (
         <div>
             <h3>Child component</h3>
