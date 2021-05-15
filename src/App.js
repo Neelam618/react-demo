@@ -10,6 +10,7 @@ import PassFunctionAsProp from './components/useState/PassFunctionAsProp'
 import UseEffectOnstates from './components/useEffect/UseEffectOnstates'
 import USeEffectOnProps from './components/useEffect/USeEffectOnProps'
 import Child from './components/Child'
+import UseMemo from './components/UseMemo'
 
 function App() {
 
@@ -49,6 +50,8 @@ function App() {
 
       <h1>Lifting state up</h1>
       <Child data={parentData}/>
+
+      <UseMemo />
     </div>
   );
 }
