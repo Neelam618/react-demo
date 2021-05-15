@@ -12,8 +12,8 @@ export default function UseMemo() {
     return (
         <div>
             <h1>useMemo hook</h1>
-            <h2>Count: {count}</h2>
             <h2>Item: {item}</h2>
+            <h2>Count: {count}</h2>
             <h2>Multiply count: {multiplyCountMemo}</h2>
 
             <button onClick={() => setCount(count + 1)}>Update Count</button>
