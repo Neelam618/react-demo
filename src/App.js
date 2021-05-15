@@ -9,6 +9,7 @@ import GetFormValues from './components/useState/GetFormValues'
 import PassFunctionAsProp from './components/useState/PassFunctionAsProp'
 import UseEffectWithstates from './components/useEffect/UseEffectWithstates'
 import USeEffetcOnProps from './components/useEffect/USeEffetcOnProps'
+import Child from './components/Child'
 
 function App() {
   const [count, setCount] = useState(10)
@@ -16,6 +17,10 @@ function App() {
 
   function getData() {
     alert("function called from App")
+  }
+
+  function parentData(dataFromChild) {
+    alert(dataFromChild);
   }
 
   return (
@@ -35,6 +40,9 @@ function App() {
       <USeEffetcOnProps count={count} data={data}/>
       <button onClick={() => {setCount(count+1)}}>Update count</button>
       <button onClick={() => {setData(data+1)}}>Update Data</button>
+
+      <h1>Lifting state up</h1>
+      <Child data={parentData}/>
     </div>
   );
 }
