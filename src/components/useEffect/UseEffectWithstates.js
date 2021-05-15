@@ -8,7 +8,7 @@ export default function UseEffectWithstates() {
     }, [count])
 
     useEffect(() => {
-         alert("useEffect called on data state")
+         console.log("useEffect called on data state")
     }, [data])
 
     return (
