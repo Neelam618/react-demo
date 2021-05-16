@@ -15,8 +15,8 @@ import UseRef from './components/UseRef'
 import ForwardRefChild from './components/ForwardRefChild'
 import ControlledComponent from './components/ControlledComponent'
 import UncontrolledComponent from './components/UncontrolledComponent'
-import HOC1 from './components/HOC1'
-import HOC2 from './components/HOC2'
+import HOC1 from './components/HOC1Wrapper'
+import HOC2 from './components/HOC2Wrapper'
 
 function App() {
 
