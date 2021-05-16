@@ -15,7 +15,8 @@ import UseRef from './components/UseRef'
 import ForwardRefChild from './components/ForwardRefChild'
 import ControlledComponent from './components/ControlledComponent'
 import UncontrolledComponent from './components/UncontrolledComponent'
-import HOC from './components/HOC'
+import HOC1 from './components/HOC1'
+import HOC2 from './components/HOC2'
 
 function App() {
 
@@ -81,9 +82,10 @@ function App() {
 
       <ControlledComponent />
       <UncontrolledComponent />
-      
+
       <h1>Higher Order Component</h1>
-      <HOC comp={Counter}/>   
+      <HOC1 comp={Counter}/> 
+      <HOC2 comp={Counter}/>     
 
     </div>
   );
