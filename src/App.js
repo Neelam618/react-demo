@@ -83,7 +83,7 @@ function App() {
       <ControlledComponent />
       <UncontrolledComponent />
 
-      <h1>Higher Order Component</h1>
+      <h1>Higher Order Components</h1>
       <HOC1 comp={Counter}/> 
       <HOC2 comp={Counter}/>     
 
