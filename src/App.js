@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState, useRef} from 'react'
 import style from './style.module.css'
 import UseStatedemo from './components/useState/UseStatedemo'
 import NumberIncrement from './components/useState/NumberIncrement'
@@ -9,9 +9,10 @@ import GetFormValues from './components/useState/GetFormValues'
 import PassFunctionAsProp from './components/useState/PassFunctionAsProp'
 import UseEffectOnstates from './components/useEffect/UseEffectOnstates'
 import USeEffectOnProps from './components/useEffect/USeEffectOnProps'
-import Child from './components/Child'
+import LiftingStateUpChild from './components/LiftingStateUpChild'
 import UseMemo from './components/UseMemo'
 import UseRef from './components/UseRef'
+import ForwardRefChild from './components/ForwardRefChild'
 
 function App() {
 
@@ -28,6 +29,13 @@ function App() {
     // alert(dataFromChild);
     alert(dataFromChild.name)
     console.log(dataFromChild)
+  }
+
+  //forwardRef hook
+  let inputRef = useRef(null)
+  
+  function updateInput() {
+    inputRef.current.value ="1000"
   }
 
   return (
@@ -50,10 +58,14 @@ function App() {
       <button onClick={() => {setData(data+1)}}>Update Data</button>
 
       <h1>Lifting state up</h1>
-      <Child data={parentData}/>
+      <LiftingStateUpChild data={parentData}/>
 
       <UseMemo />
       <UseRef />
+
+      <h1>forwardRef hook</h1>
+      <ForwardRefChild ref={inputRef}/>
+      <button onClick={updateInput}>In parent: Update inputbox</button>
     </div>
   );
 }
