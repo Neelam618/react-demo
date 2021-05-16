@@ -15,6 +15,7 @@ import UseRef from './components/UseRef'
 import ForwardRefChild from './components/ForwardRefChild'
 import ControlledComponent from './components/ControlledComponent'
 import UncontrolledComponent from './components/UncontrolledComponent'
+import HOC from './components/HOC'
 
 function App() {
 
@@ -38,6 +39,15 @@ function App() {
   
   function updateInput() {
     inputRef.current.value ="1000"
+  }
+
+  //HOC
+  function Counter() {  //default component
+    const [count, setCount] =useState(0)
+    return  <div>
+        <h3>{count}</h3>
+        <button onClick={() => setCount(count+1)}>Update counter</button>
+    </div> 
   }
 
   return (
@@ -71,6 +81,10 @@ function App() {
 
       <ControlledComponent />
       <UncontrolledComponent />
+      
+      <h1>Higher Order Component</h1>
+      <HOC comp={Counter}/>   
+
     </div>
   );
 }
