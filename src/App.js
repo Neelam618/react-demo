@@ -13,6 +13,7 @@ import LiftingStateUpChild from './components/LiftingStateUpChild'
 import UseMemo from './components/UseMemo'
 import UseRef from './components/UseRef'
 import ForwardRefChild from './components/ForwardRefChild'
+import ControlledComponent from './components/ControlledComponent'
 
 function App() {
 
@@ -66,6 +67,8 @@ function App() {
       <h1>forwardRef hook</h1>
       <ForwardRefChild ref={inputRef}/>
       <button onClick={updateInput}>In parent: Update inputbox</button>
+
+      <ControlledComponent />
     </div>
   );
 }
