@@ -14,6 +14,7 @@ import UseMemo from './components/UseMemo'
 import UseRef from './components/UseRef'
 import ForwardRefChild from './components/ForwardRefChild'
 import ControlledComponent from './components/ControlledComponent'
+import UncontrolledComponent from './components/UncontrolledComponent'
 
 function App() {
 
@@ -69,6 +70,7 @@ function App() {
       <button onClick={updateInput}>In parent: Update inputbox</button>
 
       <ControlledComponent />
+      <UncontrolledComponent />
     </div>
   );
 }
