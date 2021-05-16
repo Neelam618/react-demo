@@ -11,6 +11,7 @@ import UseEffectOnstates from './components/useEffect/UseEffectOnstates'
 import USeEffectOnProps from './components/useEffect/USeEffectOnProps'
 import Child from './components/Child'
 import UseMemo from './components/UseMemo'
+import UseRef from './components/UseRef'
 
 function App() {
 
@@ -52,6 +53,7 @@ function App() {
       <Child data={parentData}/>
 
       <UseMemo />
+      <UseRef />
     </div>
   );
 }
