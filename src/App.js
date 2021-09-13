@@ -17,6 +17,7 @@ import ControlledComponent from './components/ControlledComponent'
 import UncontrolledComponent from './components/UncontrolledComponent'
 import HOC1 from './components/HOC1Wrapper'
 import HOC2 from './components/HOC2Wrapper'
+import UseReducer from './components/UseReducer'
 
 function App() {
 
@@ -86,6 +87,7 @@ function App() {
       <h1>Higher Order Components</h1>
       <HOC1 comp={Counter}/> 
       <HOC2 comp={Counter}/>     
+      <UseReducer />
 
     </div>
   );
